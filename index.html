@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CardioAI – ECG Anomaly Monitor</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="logo"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h5l2.5-7 4 14 2.5-7H22"/></svg></div>
+  <button data-v="monitor" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M5 11h3l2-3 3 6 2-3h4M8 21h8"/></svg>Monitor</button>
+  <button data-v="patients"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2 20c0-4 3-6 7-6s7 2 7 6M17 5a3.5 3.5 0 010 7M22 20c0-3-2-5-5-5.7"/></svg>Patients</button>
+  <button data-v="reports"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2h9l5 5v15H6zM14 2v6h6M9 13h8M9 17h8"/></svg>Reports</button>
+  <div class="sp"></div>
+  <button id="theme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 13A9 9 0 1111 3a7 7 0 0010 10z"/></svg>Theme</button>
+</nav>
+
+<div class="wrap">
+<!-- MONITOR -->
+<section id="v-monitor">
+  <div class="bar">
+    <h1>Live ECG monitor<small id="sub">Waiting for stream</small></h1>
+    <div><span class="lbl">Patient</span><select id="pt" aria-label="Select patient"></select></div>
+    <div>
+      <span class="lbl">Lead Selector (12-Lead ECG)</span>
+      <div class="seg" id="lead">
+        <button aria-pressed="false">I</button>
+        <button aria-pressed="true">II</button>
+        <button aria-pressed="false">III</button>
+        <button aria-pressed="false">aVR</button>
+        <button aria-pressed="false">aVL</button>
+        <button aria-pressed="false">aVF</button>
+        <button aria-pressed="false">V1</button>
+        <button aria-pressed="false">V2</button>
+        <button aria-pressed="false">V3</button>
+        <button aria-pressed="false">V4</button>
+        <button aria-pressed="false">V5</button>
+        <button aria-pressed="false">V6</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert" id="alert" role="alert">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L2 21h20zM12 10v5M12 18v.5"/></svg>
+    <span><b>Elevated reconstruction residual</b><br>This model flag is not a diagnosis. Please review the ECG and patient context.</span>
+    <button id="ack">Acknowledge</button>
+  </div>
+
+  <div class="monitor-layout">
+    <!-- FULL WIDTH SCREEN -->
+    <div class="screen">
+      <canvas id="ecg" aria-label="ECG waveform; observed signal and model reconstruction"></canvas>
+      <div class="tag" id="tag">Lead II · visual display only</div>
+
+      <!-- XAI Temporal Attribution Heatmap Bar -->
+      <div id="xai-heatmap" aria-label="Temporal reconstruction-residual attribution" style="height: 6px; width: 100%; background: var(--line); border-radius: 4px; margin-top: 10px; display: flex; overflow: hidden;" title="Temporal reconstruction-residual attribution"></div>
+
+      <div class="key">
+        <span><i style="border-color:var(--accent)"></i>Observed</span>
+        <span><i style="border-color:var(--muted);border-top-style:dashed"></i>Model reconstruction</span>
+        <span><i style="border-color:var(--bad)"></i>Elevated residual</span>
+      </div>
+    </div>
+
+    <!-- CONTROLS BAR -->
+    <div class="ctrls">
+      <button class="big go" id="stream">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6 4l14 8-14 8z"/></svg>
+        <span>Analyze Next Window</span>
+      </button>
+      <div style="margin-left:auto"><span class="lbl">Residual display cutoff</span><div class="seg" id="sens"><button data-t="0.02" aria-pressed="false">Lower</button><button data-t="0.035" aria-pressed="true">Default</button><button data-t="0.06" aria-pressed="false">Higher</button></div></div>
+      <div><span class="lbl">Audio alert</span><div class="seg" id="snd"><button aria-pressed="false">Off</button><button aria-pressed="true" class="x">On</button></div></div>
+    </div>
+
+    <!-- VITALS & METRICS ROW -->
+    <div class="vitals-row">
+      <div class="status" id="status">
+        <div class="k">Rhythm status</div>
+        <div class="v" id="sv">Normal</div>
+        <p id="sp">Select Analyze to run the fixed ECG window through the reconstruction model.</p>
+      </div>
+      <div class="card tile">
+        <div class="k">Heart rate</div>
+        <div class="big2"><span id="hr">72</span><small>bpm</small><span class="dot"></span></div>
+      </div>
+      <div class="card tile">
+        <div class="k">Reconstruction error (MSE)</div>
+        <div class="big2"><span id="mse">0.012</span></div>
+        <p style="margin:4px 0 0;font-size:12px;color:var(--muted)">Visual residual cutoff <b id="thv">0.035</b>; not the model decision threshold.</p>
+      </div>
+    </div>
+  </div><!-- End of monitor-layout -->
+
+  <div class="tabs">
+    <div class="seg" id="tabs">
+      <button data-t="find" aria-pressed="true">Findings</button>
+      <button data-t="log" aria-pressed="false">Event log <span id="cnt">(0)</span></button>
+      <button data-t="about" aria-pressed="false">How it works</button>
+    </div>
+    <div class="card" id="t-find"></div>
+    <div class="card hide" id="t-log"></div>
+    <div class="card hide" id="t-about">
+      <div class="p">
+        <h2>Label-free anomaly detection</h2>
+        <p>Current ECG workflows rely on slow manual screening and supervised AI that needs labelled examples, so rare cardiac anomalies are missed.</p>
+        <p>CardioAI reconstructs each incoming window and reports its reconstruction residual. A residual indicates that the model did not reproduce the input well; it is not a diagnosis and must be reviewed with the source ECG and clinical context.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATIENTS -->
+<section id="v-patients" class="hide">
+  <div class="bar"><h1>Patients<small>Select a patient to open the live monitor</small></h1></div>
+  <div class="pts" id="ptlist"></div>
+</section>
+
+<!-- REPORTS -->
+<section id="v-reports" class="hide">
+  <div class="bar"><h1>Session report<small id="rsub"></small></h1></div>
+  <div class="card" id="rep"></div>
+</section>
+
+<p class="foot">Research prototype. Not a certified medical device. Reconstruction residuals are not clinical diagnoses and must not be used for treatment decisions.</p>
+</div>
+
+<script type="module" src="src/main.js"></script>
+</body>
+</html>

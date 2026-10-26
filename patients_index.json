@@ -1,0 +1,702 @@
+[
+  {
+    "id": "PT-9",
+    "name": "Patient 9",
+    "info": "55.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-38",
+    "name": "Patient 38",
+    "info": "40.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-40",
+    "name": "Patient 40",
+    "info": "60.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-57",
+    "name": "Patient 57",
+    "info": "26.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-59",
+    "name": "Patient 59",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-63",
+    "name": "Patient 63",
+    "info": "30.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-65",
+    "name": "Patient 65",
+    "info": "62.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-75",
+    "name": "Patient 75",
+    "info": "31.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-76",
+    "name": "Patient 76",
+    "info": "38.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-79",
+    "name": "Patient 79",
+    "info": "47.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-93",
+    "name": "Patient 93",
+    "info": "47.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-100",
+    "name": "Patient 100",
+    "info": "20.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-112",
+    "name": "Patient 112",
+    "info": "44.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-115",
+    "name": "Patient 115",
+    "info": "18.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-116",
+    "name": "Patient 116",
+    "info": "49.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-117",
+    "name": "Patient 117",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-119",
+    "name": "Patient 119",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-121",
+    "name": "Patient 121",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-122",
+    "name": "Patient 122",
+    "info": "44.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-128",
+    "name": "Patient 128",
+    "info": "33.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-129",
+    "name": "Patient 129",
+    "info": "41.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-132",
+    "name": "Patient 132",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-157",
+    "name": "Patient 157",
+    "info": "74.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-160",
+    "name": "Patient 160",
+    "info": "68.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-162",
+    "name": "Patient 162",
+    "info": "85.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI, HYP, CD)"
+  },
+  {
+    "id": "PT-167",
+    "name": "Patient 167",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-172",
+    "name": "Patient 172",
+    "info": "62.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-175",
+    "name": "Patient 175",
+    "info": "64.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-180",
+    "name": "Patient 180",
+    "info": "81.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-201",
+    "name": "Patient 201",
+    "info": "32.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-203",
+    "name": "Patient 203",
+    "info": "46.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-208",
+    "name": "Patient 208",
+    "info": "25.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-210",
+    "name": "Patient 210",
+    "info": "58.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-218",
+    "name": "Patient 218",
+    "info": "60.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-240",
+    "name": "Patient 240",
+    "info": "54.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-241",
+    "name": "Patient 241",
+    "info": "23.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-243",
+    "name": "Patient 243",
+    "info": "29.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-245",
+    "name": "Patient 245",
+    "info": "46.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-252",
+    "name": "Patient 252",
+    "info": "50.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-271",
+    "name": "Patient 271",
+    "info": "75.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI, HYP)"
+  },
+  {
+    "id": "PT-274",
+    "name": "Patient 274",
+    "info": "67.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI, HYP)"
+  },
+  {
+    "id": "PT-299",
+    "name": "Patient 299",
+    "info": "59.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-318",
+    "name": "Patient 318",
+    "info": "56.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-334",
+    "name": "Patient 334",
+    "info": "69.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-336",
+    "name": "Patient 336",
+    "info": "75.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-347",
+    "name": "Patient 347",
+    "info": "75.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP, CD)"
+  },
+  {
+    "id": "PT-361",
+    "name": "Patient 361",
+    "info": "50.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-364",
+    "name": "Patient 364",
+    "info": "20.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-377",
+    "name": "Patient 377",
+    "info": "17.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-378",
+    "name": "Patient 378",
+    "info": "17.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-382",
+    "name": "Patient 382",
+    "info": "81.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Unknown"
+  },
+  {
+    "id": "PT-388",
+    "name": "Patient 388",
+    "info": "83.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-397",
+    "name": "Patient 397",
+    "info": "18.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-400",
+    "name": "Patient 400",
+    "info": "38.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-405",
+    "name": "Patient 405",
+    "info": "38.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-417",
+    "name": "Patient 417",
+    "info": "75.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-427",
+    "name": "Patient 427",
+    "info": "86.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-430",
+    "name": "Patient 430",
+    "info": "62.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-440",
+    "name": "Patient 440",
+    "info": "58.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-448",
+    "name": "Patient 448",
+    "info": "62.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-449",
+    "name": "Patient 449",
+    "info": "63.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Unknown"
+  },
+  {
+    "id": "PT-452",
+    "name": "Patient 452",
+    "info": "78.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-472",
+    "name": "Patient 472",
+    "info": "62.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-473",
+    "name": "Patient 473",
+    "info": "58.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-478",
+    "name": "Patient 478",
+    "info": "39.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-499",
+    "name": "Patient 499",
+    "info": "60.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-504",
+    "name": "Patient 504",
+    "info": "29.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-512",
+    "name": "Patient 512",
+    "info": "77.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI, CD)"
+  },
+  {
+    "id": "PT-514",
+    "name": "Patient 514",
+    "info": "61.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-516",
+    "name": "Patient 516",
+    "info": "37.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-526",
+    "name": "Patient 526",
+    "info": "69.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  },
+  {
+    "id": "PT-527",
+    "name": "Patient 527",
+    "info": "61.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, CD)"
+  },
+  {
+    "id": "PT-534",
+    "name": "Patient 534",
+    "info": "80.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-559",
+    "name": "Patient 559",
+    "info": "58.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-564",
+    "name": "Patient 564",
+    "info": "62.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI)"
+  },
+  {
+    "id": "PT-569",
+    "name": "Patient 569",
+    "info": "300.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, CD)"
+  },
+  {
+    "id": "PT-570",
+    "name": "Patient 570",
+    "info": "47.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-573",
+    "name": "Patient 573",
+    "info": "73.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, HYP)"
+  },
+  {
+    "id": "PT-581",
+    "name": "Patient 581",
+    "info": "73.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI, CD)"
+  },
+  {
+    "id": "PT-582",
+    "name": "Patient 582",
+    "info": "38.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-584",
+    "name": "Patient 584",
+    "info": "41.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-598",
+    "name": "Patient 598",
+    "info": "73.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-611",
+    "name": "Patient 611",
+    "info": "63.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-618",
+    "name": "Patient 618",
+    "info": "81.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-619",
+    "name": "Patient 619",
+    "info": "55.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-658",
+    "name": "Patient 658",
+    "info": "46.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (CD)"
+  },
+  {
+    "id": "PT-685",
+    "name": "Patient 685",
+    "info": "85.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI, CD)"
+  },
+  {
+    "id": "PT-687",
+    "name": "Patient 687",
+    "info": "77.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-688",
+    "name": "Patient 688",
+    "info": "85.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, CD)"
+  },
+  {
+    "id": "PT-694",
+    "name": "Patient 694",
+    "info": "49.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-696",
+    "name": "Patient 696",
+    "info": "57.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-707",
+    "name": "Patient 707",
+    "info": "69.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-723",
+    "name": "Patient 723",
+    "info": "71.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC, MI)"
+  },
+  {
+    "id": "PT-726",
+    "name": "Patient 726",
+    "info": "60.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-732",
+    "name": "Patient 732",
+    "info": "49.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-751",
+    "name": "Patient 751",
+    "info": "64.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-756",
+    "name": "Patient 756",
+    "info": "70.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (STTC)"
+  },
+  {
+    "id": "PT-758",
+    "name": "Patient 758",
+    "info": "64.0 y \u00b7 Male \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-764",
+    "name": "Patient 764",
+    "info": "55.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Normal ECG (NORM)"
+  },
+  {
+    "id": "PT-765",
+    "name": "Patient 765",
+    "info": "63.0 y \u00b7 Female \u00b7 Fold 10",
+    "hr": 72,
+    "diagnosis": "Abnormal (MI)"
+  }
+]
