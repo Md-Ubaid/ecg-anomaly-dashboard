@@ -118,5 +118,6 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 if __name__ == '__main__':
     load_env_file()
     mimetypes.add_type('application/javascript', '.js')
-    print('ECG dashboard: http://127.0.0.1:8765')
-    ThreadingHTTPServer(('127.0.0.1', 8765), DashboardHandler).serve_forever()
+    port = int(os.environ.get('PORT', 8765))
+    print(f'ECG dashboard starting on port {port}')
+    ThreadingHTTPServer(('0.0.0.0', port), DashboardHandler).serve_forever()
